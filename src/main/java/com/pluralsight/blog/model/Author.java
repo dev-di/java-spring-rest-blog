@@ -18,8 +18,9 @@ public class Author {
     private Long id;
     private String firstname;
     private String lastname;
-    private String username;
-    private String password;
+
+    @JsonIgnore private String username;
+    @JsonIgnore private String password;
 
     @OneToMany
     private List<Post> posts;
